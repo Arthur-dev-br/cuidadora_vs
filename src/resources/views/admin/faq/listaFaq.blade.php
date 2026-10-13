@@ -56,7 +56,6 @@
 <thead>
 <tr>
 <th>Id</th>
-<th>Fundo</th>
 <th>Título</th>
 <th>Pergunta</th>
 <th>Resposta</th>
@@ -68,12 +67,6 @@
 @forelse ($faqs as $faq)
 <tr>
 <td>{{ $faq->id_faq }}</td>
-<td>
-@if ($faq->fundo_faq)
-<img src="{{ asset('vs-cuidadora/assets/' . $faq->fundo_faq) }}" alt="Fundo do FAQ {{ $faq->titulo_faq }}" class="rounded admin-table-thumbnail" />@else
-<span class="text-muted">Sem imagem</span>
-@endif
-</td>
 <td>
 <span class="admin-record-label">{{ $faq->titulo_faq }}</span>
 </td>

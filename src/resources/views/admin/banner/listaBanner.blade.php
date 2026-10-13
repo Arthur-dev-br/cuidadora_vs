@@ -862,7 +862,7 @@
 
                 document
                     .getElementById('formEditarBanner')
-                    .action = '/admin/banner/' + id;
+                    .action = 'banner/' + id;
 
 
                 // Limpa uma nova imagem selecionada anteriormente

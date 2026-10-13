@@ -183,24 +183,26 @@ Route::middleware('auth')->group(function () {
             |--------------------------------------------------------------------------
             */
 
+             
             Route::get('/banner', [BannerController::class, 'index'])
                 ->name('banner.index');
-
-
+ 
+ 
             // cadastra um novo banner
             Route::post('/banner', [BannerController::class, 'store'])
                 ->name('banner.store');
-
-
+ 
+ 
             // atualiza um banner
             Route::put('/banner/{id}', [BannerController::class, 'update'])
                 ->name('banner.update');
-
-
+ 
+ 
             // muda o status do banner
             Route::patch('/banner/{id}', [BannerController::class, 'status'])
                 ->name('banner.status');
-
+ 
+ 
 
             /*
             |--------------------------------------------------------------------------
